@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-19 18:44:18.549351",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lot_id",
+  "farmer_id",
+  "contact",
+  "farmer_name",
+  "crop_variety",
+  "lot_weight",
+  "unit",
+  "source_warehouse",
+  "organizer_name",
+  "rate",
+  "check"
+ ],
+ "fields": [
+  {
+   "fieldname": "lot_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lot ID"
+  },
+  {
+   "fieldname": "farmer_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farmer ID"
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "organizer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Organizer Name"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Check"
+  },
+  {
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "lot_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Lot Weight",
+   "precision": "2"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Source Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-22 16:41:40.085596",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Invoice Processing Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

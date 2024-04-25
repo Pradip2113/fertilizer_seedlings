@@ -1,0 +1,268 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:GOT-{####}",
+ "creation": "2024-01-05 15:06:23.907246",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_name",
+  "column_break_a0h66",
+  "column_break_afpz9",
+  "datee",
+  "section_break_o05to",
+  "seed_quality_inspection_number",
+  "crop_name",
+  "column_break_urpe3",
+  "lot_number",
+  "crop_variety",
+  "column_break_iarta",
+  "lot_quantity",
+  "date",
+  "section_break_pciye",
+  "no_of_seeds",
+  "column_break_ddosz",
+  "no_of_seedling",
+  "column_break_qrcjd",
+  "plant_population",
+  "column_break_acfgb",
+  "self_data",
+  "offtypes_section",
+  "others",
+  "column_break_fde0c",
+  "branch",
+  "column_break_4tdgx",
+  "sterile",
+  "result_section",
+  "selfr",
+  "column_break_yhczn",
+  "offtypes",
+  "column_break_r15sv",
+  "genetic_purity",
+  "column_break_sfhjl",
+  "genetic_purity_withself",
+  "remark_section",
+  "remark",
+  "column_break_wmwcf",
+  "result"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date of Sowing"
+  },
+  {
+   "fieldname": "seed_quality_inspection_number",
+   "fieldtype": "Link",
+   "label": "Seed Quality Inspection Number",
+   "options": "Seed Quality Inspection"
+  },
+  {
+   "fetch_from": "seed_quality_inspection_number.crop",
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "label": "Crop Name"
+  },
+  {
+   "fetch_from": "seed_quality_inspection_number.lot_number",
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "label": "Lot Number"
+  },
+  {
+   "fetch_from": "seed_quality_inspection_number.lot_quantity",
+   "fieldname": "lot_quantity",
+   "fieldtype": "Float",
+   "label": "Lot Quantity",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "seed_quality_inspection_number.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "section_break_pciye",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_of_seeds",
+   "fieldtype": "Int",
+   "label": "No. of Seeds"
+  },
+  {
+   "fieldname": "no_of_seedling",
+   "fieldtype": "Int",
+   "label": "No. of Seedling"
+  },
+  {
+   "fieldname": "plant_population",
+   "fieldtype": "Int",
+   "label": "Plant Population"
+  },
+  {
+   "fieldname": "offtypes_section",
+   "fieldtype": "Section Break",
+   "label": "Offtypes"
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Int",
+   "label": "Others"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Int",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "sterile",
+   "fieldtype": "Int",
+   "label": "Sterile"
+  },
+  {
+   "fieldname": "result_section",
+   "fieldtype": "Section Break",
+   "label": "Result"
+  },
+  {
+   "fieldname": "offtypes",
+   "fieldtype": "Int",
+   "label": "Offtypes%"
+  },
+  {
+   "fieldname": "genetic_purity",
+   "fieldtype": "Int",
+   "label": "Genetic Purity%"
+  },
+  {
+   "fieldname": "genetic_purity_withself",
+   "fieldtype": "Int",
+   "label": "Genetic Purity% withself"
+  },
+  {
+   "fieldname": "remark_section",
+   "fieldtype": "Section Break",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_afpz9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_o05to",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_urpe3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_iarta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ddosz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qrcjd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_acfgb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_a0h66",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "datee",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "selfr",
+   "fieldtype": "Int",
+   "label": "Self%"
+  },
+  {
+   "fieldname": "self_data",
+   "fieldtype": "Float",
+   "label": "Self"
+  },
+  {
+   "fieldname": "column_break_fde0c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4tdgx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yhczn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_r15sv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sfhjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Grow Out Test",
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wmwcf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nPass\nFail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-18 21:09:00.045206",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Grow Out Test",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

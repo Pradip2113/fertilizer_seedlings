@@ -1,0 +1,407 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SH-{####}",
+ "creation": "2024-01-10 10:56:10.923263",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_name",
+  "column_break_84lyp",
+  "column_break_sbpqk",
+  "date",
+  "section_break_b9ca0",
+  "seed_q_i_no",
+  "column_break_ng94z",
+  "farmer_id",
+  "column_break_k4slr",
+  "farmer_name",
+  "section_break_uvxty",
+  "crop_name",
+  "column_break_dhmy2",
+  "crop_variety",
+  "column_break_ihepj",
+  "lot_number",
+  "column_break_b1fty",
+  "lot_quantity",
+  "section_break_l3tig",
+  "sr_no",
+  "sr1",
+  "sr2",
+  "sr3",
+  "sr4",
+  "sr5",
+  "column_break_s5iaz",
+  "no_of_seeds",
+  "no1",
+  "no2",
+  "no3",
+  "no4",
+  "no5",
+  "column_break_nmebi",
+  "no_of_seeds_infected",
+  "non1",
+  "non2",
+  "non3",
+  "non4",
+  "non5",
+  "column_break_mopx4",
+  "no_of_seeds_noninfected",
+  "n1",
+  "n2",
+  "n3",
+  "n4",
+  "n5",
+  "column_break_tlsne",
+  "no_of_seeds_infected_",
+  "pn1",
+  "pn2",
+  "pn3",
+  "pn4",
+  "pn5",
+  "column_break_pd67l",
+  "no_of_seeds_noninfected_",
+  "pnon1",
+  "pnon2",
+  "pnon3",
+  "pnon4",
+  "pnon5",
+  "section_break_kddwn",
+  "remark",
+  "column_break_pvay5",
+  "result"
+ ],
+ "fields": [
+  {
+   "default": "Seed Health Test",
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_84lyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sbpqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_b9ca0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seed_q_i_no",
+   "fieldtype": "Link",
+   "label": "Seed Quality Inspection Number",
+   "options": "Seed Quality Inspection"
+  },
+  {
+   "fieldname": "column_break_ng94z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.farmer_id",
+   "fieldname": "farmer_id",
+   "fieldtype": "Data",
+   "label": "Farmer ID"
+  },
+  {
+   "fieldname": "column_break_k4slr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "section_break_uvxty",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.crop",
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "label": "Crop Name"
+  },
+  {
+   "fieldname": "column_break_dhmy2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "column_break_ihepj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.lot_number",
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "label": "Lot Number"
+  },
+  {
+   "fieldname": "column_break_b1fty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.lot_quantity",
+   "fieldname": "lot_quantity",
+   "fieldtype": "Data",
+   "label": "Lot Quantity"
+  },
+  {
+   "fieldname": "section_break_l3tig",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_of_seeds",
+   "fieldtype": "Heading",
+   "label": "Number Of Seeds "
+  },
+  {
+   "fieldname": "no_of_seeds_infected",
+   "fieldtype": "Heading",
+   "label": "No. Infected Seeds "
+  },
+  {
+   "fieldname": "no_of_seeds_noninfected",
+   "fieldtype": "Heading",
+   "label": "No. NonInfec. Seeds "
+  },
+  {
+   "fieldname": "no_of_seeds_infected_",
+   "fieldtype": "Heading",
+   "label": "No.Seeds Infec.% "
+  },
+  {
+   "fieldname": "no_of_seeds_noninfected_",
+   "fieldtype": "Heading",
+   "label": "No.Seeds NonInfe.%"
+  },
+  {
+   "fieldname": "column_break_nmebi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mopx4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tlsne",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pd67l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kddwn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "sr1",
+   "fieldtype": "Int",
+   "read_only": 1
+  },
+  {
+   "default": "2",
+   "fieldname": "sr2",
+   "fieldtype": "Int",
+   "read_only": 1
+  },
+  {
+   "default": "3",
+   "fieldname": "sr3",
+   "fieldtype": "Int",
+   "read_only": 1
+  },
+  {
+   "default": "4",
+   "fieldname": "sr4",
+   "fieldtype": "Int",
+   "read_only": 1
+  },
+  {
+   "default": "5",
+   "fieldname": "sr5",
+   "fieldtype": "Int",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Heading",
+   "label": "Sr No."
+  },
+  {
+   "fieldname": "column_break_s5iaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no1",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "no2",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "no3",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "no4",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "no5",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "non1",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "non2",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "non3",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "non4",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "non5",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "n1",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "n2",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "n3",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "n4",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "n5",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "pn1",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pn2",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pn3",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pn4",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pn5",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pnon1",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pnon2",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pnon3",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pnon4",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "pnon5",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_pvay5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nPass\nFail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-19 10:38:30.056727",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Seed Health Test",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

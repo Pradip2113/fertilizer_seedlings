@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-11 15:02:18.988021",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "n1",
+  "h1",
+  "a1",
+  "f1",
+  "d1",
+  "r1"
+ ],
+ "fields": [
+  {
+   "fieldname": "n1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "N1"
+  },
+  {
+   "fieldname": "h1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "H1"
+  },
+  {
+   "fieldname": "a1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "A1"
+  },
+  {
+   "fieldname": "f1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "F1"
+  },
+  {
+   "fieldname": "d1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "D1"
+  },
+  {
+   "fieldname": "r1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "R1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-11 15:03:05.081757",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Replication1 Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

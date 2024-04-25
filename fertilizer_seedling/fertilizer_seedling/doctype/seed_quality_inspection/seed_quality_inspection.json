@@ -1,0 +1,397 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SQI-{####}",
+ "creation": "2023-12-29 17:55:32.797097",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "check",
+  "column_break_sg6vt",
+  "column_break_fo89z",
+  "date",
+  "section_break_0zqfx",
+  "define_test_id",
+  "column_break_n6odu",
+  "farmer_id",
+  "column_break_wyqnq",
+  "farmer_name",
+  "column_break_83sgc",
+  "contact",
+  "column_break_xkoeh",
+  "organizer_name",
+  "column_break_cduzt",
+  "state",
+  "column_break_p6jul",
+  "district",
+  "column_break_n0sxl",
+  "taluka",
+  "column_break_r2ovf",
+  "village",
+  "section_break_6p0dq",
+  "crop_type",
+  "batch_id",
+  "column_break_xw1nz",
+  "crop",
+  "plotarea",
+  "column_break_dhdae",
+  "crop_variety",
+  "plot_number",
+  "column_break_zqtyp",
+  "sowing_method",
+  "allocated_seed",
+  "column_break_cmtfz",
+  "season",
+  "uom",
+  "select_define_test_section",
+  "define_test",
+  "column_break_eguuo",
+  "lot_number",
+  "column_break_ug5gt",
+  "lot_quantity",
+  "column_break_ofpwe",
+  "unite",
+  "column_break_au1my",
+  "lot_wt",
+  "column_break_fs0is",
+  "unitl",
+  "section_break_npyqz",
+  "test_information",
+  "target_warehouse",
+  "section_break_fp3dg",
+  "column_break_ro40e",
+  "column_break_sbjdr",
+  "select_status_of_lot"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_sg6vt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fo89z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_0zqfx",
+   "fieldtype": "Section Break",
+   "label": "Farmer Details"
+  },
+  {
+   "fetch_from": "define_test_id.farmer_id",
+   "fieldname": "farmer_id",
+   "fieldtype": "Data",
+   "label": "Farmer ID"
+  },
+  {
+   "fieldname": "column_break_wyqnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "column_break_83sgc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.contact",
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "column_break_cduzt",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fetch_from": "define_test_id.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "column_break_p6jul",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.district",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_n0sxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.taluka",
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Taluka"
+  },
+  {
+   "fieldname": "column_break_r2ovf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.village",
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "section_break_6p0dq",
+   "fieldtype": "Section Break",
+   "label": "Crop Details"
+  },
+  {
+   "fetch_from": "define_test_id.crop_type",
+   "fieldname": "crop_type",
+   "fieldtype": "Link",
+   "label": "Crop Type",
+   "options": "Crop Type"
+  },
+  {
+   "fetch_from": "define_test_id.foundation_batch_id",
+   "fieldname": "batch_id",
+   "fieldtype": "Link",
+   "label": "Foundation Batch ID",
+   "options": "Foundation Seed"
+  },
+  {
+   "fieldname": "column_break_xw1nz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.crop",
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Crop"
+  },
+  {
+   "fetch_from": "define_test_id.plotarea",
+   "fieldname": "plotarea",
+   "fieldtype": "Data",
+   "label": "Plot(Area)"
+  },
+  {
+   "fieldname": "column_break_dhdae",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Link",
+   "label": "Crop Variety",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "define_test_id.season",
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "column_break_zqtyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.sowing_method",
+   "fieldname": "sowing_method",
+   "fieldtype": "Link",
+   "label": "Sowing Method",
+   "options": "Sowing Method"
+  },
+  {
+   "fetch_from": "define_test_id.allocated_seed",
+   "fieldname": "allocated_seed",
+   "fieldtype": "Data",
+   "label": "Allocated Seed"
+  },
+  {
+   "fieldname": "section_break_npyqz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_cmtfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.unit",
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fetch_from": "define_test_id.plot_number",
+   "fieldname": "plot_number",
+   "fieldtype": "Data",
+   "label": "Plot Number"
+  },
+  {
+   "fieldname": "select_define_test_section",
+   "fieldtype": "Section Break",
+   "label": "Select Define Test"
+  },
+  {
+   "fieldname": "define_test",
+   "fieldtype": "Link",
+   "label": "Define Test",
+   "options": "Define Test"
+  },
+  {
+   "fieldname": "test_information",
+   "fieldtype": "Table",
+   "label": "Test Information",
+   "options": "Seed Quality Test Child Table"
+  },
+  {
+   "fetch_from": "define_test_id.lot_number",
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "label": "Lot Number"
+  },
+  {
+   "fetch_from": "define_test_id.quantity_expected",
+   "fieldname": "lot_quantity",
+   "fieldtype": "Float",
+   "label": "Farm Quantity Expected",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_n6odu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "define_test_id",
+   "fieldtype": "Link",
+   "label": "Define Test ID",
+   "options": "Define Test"
+  },
+  {
+   "fieldname": "column_break_eguuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ug5gt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.lot_weight",
+   "fieldname": "lot_wt",
+   "fieldtype": "Float",
+   "label": "Lot Wt.",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "Check"
+  },
+  {
+   "fieldname": "column_break_au1my",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ofpwe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.unitqt",
+   "fieldname": "unite",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "column_break_fs0is",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.unitwt",
+   "fieldname": "unitl",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fetch_from": "define_test_id.target_warehouse",
+   "fieldname": "target_warehouse",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Target Warehouse"
+  },
+  {
+   "fieldname": "column_break_xkoeh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "define_test_id.organizer_name",
+   "fieldname": "organizer_name",
+   "fieldtype": "Data",
+   "label": "Organizer Name"
+  },
+  {
+   "fieldname": "section_break_fp3dg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_status_of_lot",
+   "fieldtype": "Select",
+   "label": "Select Status of Lot",
+   "options": "\nLot Approved\nLot Rejected"
+  },
+  {
+   "fieldname": "column_break_sbjdr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ro40e",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-24 11:26:20.184229",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Seed Quality Inspection",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "lot_number,farmer_id,farmer_name,plot_number,crop,crop_variety",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

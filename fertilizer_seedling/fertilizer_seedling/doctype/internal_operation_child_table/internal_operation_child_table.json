@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-27 10:51:55.929132",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operation_name",
+  "time"
+ ],
+ "fields": [
+  {
+   "fieldname": "operation_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Operation Name",
+   "options": "Internal Operation Master"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time(Days)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-10 17:23:11.792553",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Internal Operation Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

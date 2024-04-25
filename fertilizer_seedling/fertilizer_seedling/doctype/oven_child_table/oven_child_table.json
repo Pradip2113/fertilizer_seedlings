@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-11 13:05:08.322660",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_name",
+  "replication1",
+  "replication2",
+  "replication3",
+  "replication4"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "replication1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Replication1"
+  },
+  {
+   "fieldname": "replication2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Replication2"
+  },
+  {
+   "fieldname": "replication3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Replication3"
+  },
+  {
+   "fieldname": "replication4",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Replication4"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-11 13:21:32.696877",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Oven Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

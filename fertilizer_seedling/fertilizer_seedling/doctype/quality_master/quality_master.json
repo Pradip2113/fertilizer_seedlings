@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:quality_test_name",
+ "creation": "2023-12-29 17:20:26.697321",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "quality_test_name",
+  "maximum",
+  "minimum"
+ ],
+ "fields": [
+  {
+   "fieldname": "quality_test_name",
+   "fieldtype": "Data",
+   "label": "Quality Test Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "maximum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Maximum",
+   "precision": "4",
+   "reqd": 1
+  },
+  {
+   "fieldname": "minimum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Minimum",
+   "precision": "4",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-30 18:28:10.772247",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Quality Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

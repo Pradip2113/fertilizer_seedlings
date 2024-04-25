@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-12 12:14:53.158597",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lot_number",
+  "lot_weight",
+  "unit",
+  "source_warehouse",
+  "procurement_date",
+  "germination_",
+  "physical_purity_",
+  "ep_test_",
+  "got_"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lot Number"
+  },
+  {
+   "columns": 1,
+   "fieldname": "lot_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Lot Weight",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "procurement_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Procurement Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "germination_",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Germination %",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "physical_purity_",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Physical Purity %",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ep_test_",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "EP Test %",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "got_",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GOT %",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": " Source Warehouse",
+   "options": "Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-16 23:47:37.688562",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Blending Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

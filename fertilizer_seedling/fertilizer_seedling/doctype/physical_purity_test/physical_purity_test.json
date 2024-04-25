@@ -1,0 +1,609 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PPT-{####}",
+ "creation": "2024-01-04 15:00:49.470144",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_name",
+  "column_break_egpni",
+  "column_break_1uuoe",
+  "date",
+  "section_break_pazzv",
+  "seed_ins_no",
+  "column_break_d2jju",
+  "farmer_id",
+  "column_break_rk1fw",
+  "farmer_name",
+  "section_break_uv3jq",
+  "crop_name",
+  "lot_number",
+  "column_break_r2krr",
+  "crop_variety",
+  "lot_quantity",
+  "column_break_32gbr",
+  "weight_of_working_sample",
+  "section_break_w2x4m",
+  "test",
+  "column_break_adhlh",
+  "initial_working_sample_wtg",
+  "column_break_ohhhw",
+  "pure_seed",
+  "column_break_pzmjw",
+  "inert_matter",
+  "column_break_irqlj",
+  "other_seed",
+  "column_break_5igyd",
+  "total_wt_of_components",
+  "section_break_y1wrf",
+  "test1",
+  "column_break_vsnsi",
+  "total_gm_test1",
+  "column_break_uoh4g",
+  "pure_seed_gm",
+  "pure_seed_percen",
+  "column_break_amvqw",
+  "inert_matter_gm",
+  "inert_matter_percen",
+  "column_break_4p6k8",
+  "other_seed_gm",
+  "other_seed_percen",
+  "column_break_sbphy",
+  "total_wt_comp_gm",
+  "section_break_0moud",
+  "test_2",
+  "column_break_zphhg",
+  "total_gm_test2",
+  "column_break_ymfrw",
+  "pure_seed_2_gm",
+  "pure_seed_2_percen",
+  "column_break_eysdo",
+  "inert_matter_2",
+  "inert_matter_2_percen",
+  "column_break_13pfa",
+  "other_seed_2",
+  "other_seed_2_percen",
+  "column_break_vkc1g",
+  "total_wt_comp_2",
+  "section_break_nenby",
+  "total_result",
+  "column_break_psyak",
+  "column_break_qhjgz",
+  "total_pure_seed_gm",
+  "column_break_m0tpo",
+  "total_inert_matter_gm",
+  "column_break_hcfbt",
+  "total_other_seed_gm",
+  "column_break_hk1pp",
+  "total_comp_gm",
+  "section_break_kbwbd",
+  "mean_result",
+  "column_break_db78t",
+  "column_break_oflub",
+  "pure_seed_mean",
+  "column_break_ogwpv",
+  "inert_matter_mean",
+  "column_break_krjmb",
+  "other_seed_mean",
+  "column_break_jdjeo",
+  "section_break_l8p1o",
+  "final_result",
+  "column_break_zm4kf",
+  "column_break_j0ddv",
+  "pure_seed_final",
+  "column_break_ajcmk",
+  "inert_matter_final",
+  "column_break_dtqmk",
+  "other_seed_final",
+  "column_break_bhmac",
+  "result",
+  "section_break_xd0yw",
+  "asd",
+  "column_break_4kdz1",
+  "gfc"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_egpni",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_1uuoe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Physical Purity Test",
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_pazzv",
+   "fieldtype": "Section Break",
+   "label": "Test Information"
+  },
+  {
+   "fieldname": "seed_ins_no",
+   "fieldtype": "Link",
+   "label": "Seed Quality Inspection Number",
+   "options": "Seed Quality Inspection"
+  },
+  {
+   "fieldname": "column_break_d2jju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_ins_no.crop",
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "label": "Crop Name"
+  },
+  {
+   "fetch_from": "seed_ins_no.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fetch_from": "seed_ins_no.farmer_id",
+   "fieldname": "farmer_id",
+   "fieldtype": "Data",
+   "label": "Farmer ID"
+  },
+  {
+   "fieldname": "weight_of_working_sample",
+   "fieldtype": "Float",
+   "label": "Weight of Working Sample(gm)",
+   "precision": "3"
+  },
+  {
+   "fetch_from": "seed_ins_no.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "column_break_rk1fw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_uv3jq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_r2krr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_32gbr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_w2x4m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test1",
+   "fieldtype": "Heading",
+   "label": "Test 1"
+  },
+  {
+   "fieldname": "section_break_y1wrf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Heading",
+   "label": "Test"
+  },
+  {
+   "fieldname": "column_break_adhlh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initial_working_sample_wtg",
+   "fieldtype": "Heading",
+   "label": "Initial Working Sample wt.(gm)"
+  },
+  {
+   "fieldname": "column_break_ohhhw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pure_seed",
+   "fieldtype": "Heading",
+   "label": "Pure Seed(gm)"
+  },
+  {
+   "fieldname": "column_break_pzmjw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inert_matter",
+   "fieldtype": "Heading",
+   "label": "Inert Matter(gm)"
+  },
+  {
+   "fieldname": "column_break_irqlj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_seed",
+   "fieldtype": "Heading",
+   "label": "Other Seed(gm)"
+  },
+  {
+   "fieldname": "column_break_5igyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_wt_of_components",
+   "fieldtype": "Heading",
+   "label": "Total wt. of components(gm)"
+  },
+  {
+   "fieldname": "column_break_vsnsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uoh4g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_amvqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4p6k8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sbphy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_2",
+   "fieldtype": "Heading",
+   "label": "Test 2"
+  },
+  {
+   "fieldname": "section_break_0moud",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zphhg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ymfrw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eysdo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13pfa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vkc1g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nenby",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_result",
+   "fieldtype": "Heading",
+   "label": "Total Result"
+  },
+  {
+   "fieldname": "column_break_qhjgz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_m0tpo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hcfbt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hk1pp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_psyak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mean_result",
+   "fieldtype": "Heading",
+   "label": "Mean Result"
+  },
+  {
+   "fieldname": "column_break_db78t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ogwpv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_krjmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kbwbd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jdjeo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oflub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_l8p1o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "final_result",
+   "fieldtype": "Heading",
+   "label": "Final Result"
+  },
+  {
+   "fieldname": "column_break_zm4kf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_j0ddv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ajcmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dtqmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bhmac",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xd0yw",
+   "fieldtype": "Section Break",
+   "label": "Type of Inert Matter"
+  },
+  {
+   "fieldname": "asd",
+   "fieldtype": "Data",
+   "label": "Test 1"
+  },
+  {
+   "fieldname": "column_break_4kdz1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gfc",
+   "fieldtype": "Data",
+   "label": "Test 2"
+  },
+  {
+   "description": "gm",
+   "fieldname": "total_gm_test1",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "total_gm_test2",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "pure_seed_gm",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "inert_matter_gm",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "other_seed_gm",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "total_wt_comp_gm",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "pure_seed_2_gm",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "inert_matter_2",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "other_seed_2",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "gm",
+   "fieldname": "total_wt_comp_2",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "%",
+   "fieldname": "pure_seed_percen",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "%",
+   "fieldname": "inert_matter_percen",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "%",
+   "fieldname": "other_seed_percen",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "%",
+   "fieldname": "pure_seed_2_percen",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "%",
+   "fieldname": "inert_matter_2_percen",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "%",
+   "fieldname": "other_seed_2_percen",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "gm",
+   "fieldname": "total_pure_seed_gm",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "gm",
+   "fieldname": "total_inert_matter_gm",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "gm",
+   "fieldname": "total_other_seed_gm",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "gm",
+   "fieldname": "total_comp_gm",
+   "fieldtype": "Float",
+   "precision": "2"
+  },
+  {
+   "description": "%",
+   "fieldname": "pure_seed_mean",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "%",
+   "fieldname": "inert_matter_mean",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "%",
+   "fieldname": "other_seed_mean",
+   "fieldtype": "Float",
+   "precision": "3"
+  },
+  {
+   "description": "%",
+   "fieldname": "pure_seed_final",
+   "fieldtype": "Float",
+   "precision": "1"
+  },
+  {
+   "description": "%",
+   "fieldname": "inert_matter_final",
+   "fieldtype": "Float",
+   "precision": "1"
+  },
+  {
+   "description": "%",
+   "fieldname": "other_seed_final",
+   "fieldtype": "Float",
+   "precision": "1"
+  },
+  {
+   "fetch_from": "seed_ins_no.lot_number",
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "label": "Lot Number"
+  },
+  {
+   "fetch_from": "seed_ins_no.lot_wt",
+   "fieldname": "lot_quantity",
+   "fieldtype": "Float",
+   "label": "Lot Weight"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nPass\nFail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-18 18:15:26.701415",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Physical Purity Test",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

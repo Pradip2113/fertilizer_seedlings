@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BLND-{####}",
+ "creation": "2024-01-12 11:52:12.218131",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_hgppg",
+  "column_break_p07cy",
+  "date",
+  "section_break_phepo",
+  "crop_name",
+  "column_break_2claz",
+  "crop_variety",
+  "column_break_ccu26",
+  "target_warehouse",
+  "section_break_o66im",
+  "get_available_lot_no",
+  "section_break_exgpu",
+  "blending_child_table",
+  "section_break_8zj5f",
+  "avg_germ",
+  "avg_ep",
+  "column_break_dqwzf",
+  "avg_pp",
+  "avg_lot_age",
+  "column_break_ch0ag",
+  "avg_got",
+  "total_weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_hgppg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_p07cy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_phepo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "blending_child_table",
+   "fieldtype": "Table",
+   "label": "Blending Child Table",
+   "options": "Blending Child Table"
+  },
+  {
+   "fieldname": "section_break_exgpu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8zj5f",
+   "fieldtype": "Section Break",
+   "label": "Result"
+  },
+  {
+   "fieldname": "avg_germ",
+   "fieldtype": "Float",
+   "label": "Avg. Germ%",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_dqwzf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_pp",
+   "fieldtype": "Float",
+   "label": "Avg. PP%",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_ch0ag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_ep",
+   "fieldtype": "Float",
+   "label": "Avg. EP%",
+   "precision": "2"
+  },
+  {
+   "fieldname": "avg_got",
+   "fieldtype": "Float",
+   "label": "Avg. GOT%",
+   "precision": "2"
+  },
+  {
+   "fieldname": "avg_lot_age",
+   "fieldtype": "Float",
+   "label": "Avg. Lot Age%",
+   "precision": "2"
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Weight",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_2claz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_variety",
+   "fieldtype": "Link",
+   "label": "Crop Variety",
+   "options": "Item"
+  },
+  {
+   "fieldname": "crop_name",
+   "fieldtype": "Link",
+   "label": "Crop Name",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "section_break_o66im",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_available_lot_no",
+   "fieldtype": "Button",
+   "label": "Get Available Lot No."
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ccu26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": " Target Warehouse",
+   "options": "Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Stock Entry",
+   "link_fieldname": "blending"
+  }
+ ],
+ "modified": "2024-01-17 16:23:18.587239",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Blending",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

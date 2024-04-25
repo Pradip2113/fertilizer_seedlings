@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-29 17:17:50.466861",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "quality_test_name",
+  "minimum",
+  "maximum",
+  "present",
+  "result"
+ ],
+ "fields": [
+  {
+   "fieldname": "quality_test_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quality Test Name",
+   "options": "Quality Master"
+  },
+  {
+   "fetch_from": "quality_test_name.minimum",
+   "fieldname": "minimum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Minimum",
+   "precision": "4"
+  },
+  {
+   "fetch_from": "quality_test_name.maximum",
+   "fieldname": "maximum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Maximum",
+   "precision": "4"
+  },
+  {
+   "fieldname": "present",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Present",
+   "precision": "4"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Result"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-30 18:24:53.900108",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Quality Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

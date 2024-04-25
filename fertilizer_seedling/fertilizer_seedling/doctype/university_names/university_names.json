@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{university_short_form}-{address}",
+ "creation": "2023-12-27 11:00:19.859189",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "university_name",
+  "address",
+  "university_short_form"
+ ],
+ "fields": [
+  {
+   "fieldname": "university_name",
+   "fieldtype": "Data",
+   "label": "University Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "university_short_form",
+   "fieldtype": "Data",
+   "label": "University Short Form"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-15 14:07:44.945196",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "University Names",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": " university_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-11 13:23:45.179548",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_no",
+  "r1",
+  "r2",
+  "mean"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample No"
+  },
+  {
+   "fieldname": "r1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "R1",
+   "precision": "2"
+  },
+  {
+   "fieldname": "r2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "R2",
+   "precision": "2"
+  },
+  {
+   "fieldname": "mean",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mean",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-11 13:27:51.761214",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Electronic Moisture Method",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

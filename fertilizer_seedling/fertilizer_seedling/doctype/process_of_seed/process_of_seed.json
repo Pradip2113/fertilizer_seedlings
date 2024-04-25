@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PRSN-{####}",
+ "creation": "2024-01-13 16:14:00.430483",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_zgwz0",
+  "column_break_h6aln",
+  "date",
+  "section_break_kfclm",
+  "blending_id_number",
+  "column_break_ajidj",
+  "foundation_batch_id",
+  "column_break_0bmgs",
+  "total_lot_wt",
+  "section_break_krzdi",
+  "machine_cleaning",
+  "section_break_fs5fm",
+  "seed_drying",
+  "section_break_g5wua",
+  "hand_cleaning",
+  "section_break_0tfpw",
+  "seed_treatment"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_zgwz0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_h6aln",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_kfclm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "blending_id_number",
+   "fieldtype": "Link",
+   "label": "Blending Id Number",
+   "options": "Blending"
+  },
+  {
+   "fieldname": "column_break_ajidj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "blending_id_number.foundation_batch_id",
+   "fieldname": "foundation_batch_id",
+   "fieldtype": "Data",
+   "label": "Foundation Batch Id"
+  },
+  {
+   "fieldname": "column_break_0bmgs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "blending_id_number.total_weight",
+   "fieldname": "total_lot_wt",
+   "fieldtype": "Float",
+   "label": "Total Lot Wt.",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_krzdi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "machine_cleaning",
+   "fieldtype": "Data",
+   "label": "Machine Cleaning"
+  },
+  {
+   "fieldname": "seed_drying",
+   "fieldtype": "Data",
+   "label": "Seed Drying"
+  },
+  {
+   "fieldname": "hand_cleaning",
+   "fieldtype": "Data",
+   "label": "Hand Cleaning"
+  },
+  {
+   "fieldname": "seed_treatment",
+   "fieldtype": "Data",
+   "label": "Seed Treatment"
+  },
+  {
+   "fieldname": "section_break_fs5fm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_g5wua",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_0tfpw",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-13 16:27:07.447963",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Process of Seed",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

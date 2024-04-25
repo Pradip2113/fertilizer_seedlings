@@ -1,0 +1,249 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MT-{####}",
+ "creation": "2024-01-11 12:45:22.427385",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_name",
+  "column_break_84lyp",
+  "column_break_sbpqk",
+  "date",
+  "section_break_b9ca0",
+  "seed_q_i_no",
+  "column_break_ng94z",
+  "farmer_id",
+  "column_break_k4slr",
+  "farmer_name",
+  "section_break_uvxty",
+  "crop_name",
+  "column_break_dhmy2",
+  "crop_variety",
+  "column_break_ihepj",
+  "lot_number",
+  "column_break_b1fty",
+  "lot_quantity",
+  "section_break_uvz0r",
+  "moisture_method",
+  "column_break_9c1t0",
+  "method",
+  "section_break_l3tig",
+  "oven_child_table",
+  "section_break_w3kag",
+  "electronic_moisture_method",
+  "final_result_section",
+  "oven",
+  "column_break_woplf",
+  "electronic_moisture",
+  "remark_section",
+  "remark",
+  "column_break_7mjl6",
+  "result"
+ ],
+ "fields": [
+  {
+   "default": "Moisture Test",
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_84lyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sbpqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_b9ca0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seed_q_i_no",
+   "fieldtype": "Link",
+   "label": "Seed Quality Inspection Number",
+   "options": "Seed Quality Inspection"
+  },
+  {
+   "fieldname": "column_break_ng94z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.farmer_id",
+   "fieldname": "farmer_id",
+   "fieldtype": "Data",
+   "label": "Farmer ID"
+  },
+  {
+   "fieldname": "column_break_k4slr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "section_break_uvxty",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.crop",
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "label": "Crop Name"
+  },
+  {
+   "fieldname": "column_break_dhmy2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "column_break_ihepj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.lot_number",
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "label": "Lot Number"
+  },
+  {
+   "fieldname": "column_break_b1fty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.lot_wt",
+   "fieldname": "lot_quantity",
+   "fieldtype": "Data",
+   "label": "Lot Quantity"
+  },
+  {
+   "fieldname": "section_break_l3tig",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_uvz0r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "moisture_method",
+   "fieldtype": "Select",
+   "label": "Moisture Method",
+   "options": "Oven\nElectronic moisture"
+  },
+  {
+   "fieldname": "method",
+   "fieldtype": "Select",
+   "label": "Method",
+   "options": "Drying"
+  },
+  {
+   "fieldname": "column_break_9c1t0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.moisture_method==\"Oven\"",
+   "fieldname": "oven_child_table",
+   "fieldtype": "Table",
+   "label": "Oven Method",
+   "options": "Oven Child Table"
+  },
+  {
+   "fieldname": "section_break_w3kag",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.moisture_method==\"Electronic moisture\"",
+   "fieldname": "electronic_moisture_method",
+   "fieldtype": "Table",
+   "label": "Electronic Moisture Method",
+   "options": "Electronic Moisture Method"
+  },
+  {
+   "fieldname": "final_result_section",
+   "fieldtype": "Section Break",
+   "label": "Final Result"
+  },
+  {
+   "depends_on": "eval:doc.moisture_method==\"Oven\"",
+   "fieldname": "oven",
+   "fieldtype": "Float",
+   "label": "Oven",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_woplf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.moisture_method==\"Electronic moisture\"",
+   "fieldname": "electronic_moisture",
+   "fieldtype": "Float",
+   "label": "Electronic Moisture",
+   "precision": "2"
+  },
+  {
+   "fieldname": "remark_section",
+   "fieldtype": "Section Break",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_7mjl6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Select Result",
+   "options": "\nPass\nFail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-19 10:33:27.911880",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Moisture Test",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

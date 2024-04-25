@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-27 10:47:04.920350",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fertilizer_name",
+  "quantity",
+  "days_after_plantation"
+ ],
+ "fields": [
+  {
+   "fieldname": "fertilizer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fertilizer Name",
+   "options": "Fertilizer Master"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "days_after_plantation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Days After Plantation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-10 17:24:18.000719",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Fertilizer Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

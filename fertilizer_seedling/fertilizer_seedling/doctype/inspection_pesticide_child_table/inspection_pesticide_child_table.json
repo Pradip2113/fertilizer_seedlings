@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-29 15:14:59.724038",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pesticide_name",
+  "quantity",
+  "actual_quantityby_farmer",
+  "days_after_plantation",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "pesticide_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pesticide Name",
+   "options": "Pesticide Master"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Quantity"
+  },
+  {
+   "fieldname": "actual_quantityby_farmer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Actual Quantity(By Farmer)"
+  },
+  {
+   "fieldname": "days_after_plantation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Days After Plantation"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-29 15:15:40.529677",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Inspection Pesticide Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-27 12:01:33.711730",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_nzxqp",
+  "date",
+  "farmer_details_section",
+  "naming_series",
+  "contact",
+  "column_break_tzh0n",
+  "farmer_name",
+  "farmer_aadhar_number",
+  "column_break_0hw7q",
+  "state",
+  "column_break_9enqw",
+  "district",
+  "column_break_nra9n",
+  "taluka",
+  "column_break_zj1gk",
+  "village",
+  "section_break_jpiap",
+  "plotarea",
+  "soil_type",
+  "irrigation_type",
+  "column_break_ssx54",
+  "atmospheric_condition",
+  "farming_type",
+  "organizer"
+ ],
+ "fields": [
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Farmer Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "plotarea",
+   "fieldtype": "Data",
+   "label": "Plot(Area)"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Link",
+   "label": "Soil Type",
+   "options": "Soil Type"
+  },
+  {
+   "fieldname": "irrigation_type",
+   "fieldtype": "Link",
+   "label": "Irrigation Type",
+   "options": "Irrigation Type"
+  },
+  {
+   "fieldname": "atmospheric_condition",
+   "fieldtype": "Link",
+   "label": "Atmospheric Condition",
+   "options": "Atmospheric Conditions"
+  },
+  {
+   "fieldname": "section_break_jpiap",
+   "fieldtype": "Section Break",
+   "label": "Farm Details"
+  },
+  {
+   "fieldname": "column_break_0hw7q",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fieldname": "column_break_ssx54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Taluka"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "column_break_tzh0n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nra9n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FRM-"
+  },
+  {
+   "fieldname": "farmer_aadhar_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farmer Aadhar Number",
+   "length": 12,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_9enqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zj1gk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farmer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farmer Details"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_nzxqp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farming_type",
+   "fieldtype": "Link",
+   "label": "Farming Type",
+   "options": "Farming Type"
+  },
+  {
+   "fieldname": "organizer",
+   "fieldtype": "Link",
+   "label": "Organizer Name",
+   "options": "Supplier"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-17 13:09:21.094853",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Farmer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "farmer_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

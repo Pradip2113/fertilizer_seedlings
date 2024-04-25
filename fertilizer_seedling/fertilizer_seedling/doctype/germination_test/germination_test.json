@@ -1,0 +1,351 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:GT-{####}",
+ "creation": "2024-01-11 14:40:40.252097",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_name",
+  "column_break_84lyp",
+  "column_break_sbpqk",
+  "date",
+  "section_break_b9ca0",
+  "seed_q_i_no",
+  "column_break_ng94z",
+  "farmer_id",
+  "column_break_k4slr",
+  "farmer_name",
+  "section_break_uvxty",
+  "crop_name",
+  "column_break_dhmy2",
+  "crop_variety",
+  "column_break_ihepj",
+  "lot_number",
+  "column_break_jerlp",
+  "section_break_uvz0r",
+  "date_of_sowing",
+  "column_break_9c1t0",
+  "date_of_final_count",
+  "section_break_l3tig",
+  "no_of_seeds",
+  "column_break_mnmn5",
+  "first_count",
+  "column_break_ut9g0",
+  "final_count",
+  "final_result_section",
+  "avg_normal_seeding",
+  "avg_dead_seeds",
+  "column_break_ooptk",
+  "avg_hard_seeds",
+  "avg_rest_indicating_seeds",
+  "column_break_wy69j",
+  "avg_fresh_ungermination",
+  "total_seeds",
+  "column_break_ldlfe",
+  "avg_abnormal_seeds",
+  "section_break_kt8gv",
+  "date1",
+  "no_of_days",
+  "date2",
+  "no_of_d",
+  "column_break_rghbk",
+  "replication1_child_table",
+  "replication3_child_table",
+  "column_break_g9h7v",
+  "replication2_child_table",
+  "replication4_child_table",
+  "remark_section",
+  "remark",
+  "column_break_putbc",
+  "result"
+ ],
+ "fields": [
+  {
+   "default": "Germination Test",
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_84lyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sbpqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_b9ca0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seed_q_i_no",
+   "fieldtype": "Link",
+   "label": "Seed Quality Inspection Number",
+   "options": "Seed Quality Inspection"
+  },
+  {
+   "fieldname": "column_break_ng94z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.farmer_id",
+   "fieldname": "farmer_id",
+   "fieldtype": "Data",
+   "label": "Farmer ID"
+  },
+  {
+   "fieldname": "column_break_k4slr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "section_break_uvxty",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.crop",
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "label": "Crop Name"
+  },
+  {
+   "fieldname": "column_break_dhmy2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "column_break_ihepj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.lot_number",
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "label": "Lot Number"
+  },
+  {
+   "fieldname": "section_break_uvz0r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9c1t0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_l3tig",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark_section",
+   "fieldtype": "Section Break",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "date_of_sowing",
+   "fieldtype": "Date",
+   "label": "Date of Sowing"
+  },
+  {
+   "fieldname": "date_of_final_count",
+   "fieldtype": "Data",
+   "label": "Date of Final Count"
+  },
+  {
+   "fieldname": "no_of_seeds",
+   "fieldtype": "Int",
+   "label": "No. of Seeds"
+  },
+  {
+   "fieldname": "column_break_mnmn5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_count",
+   "fieldtype": "Int",
+   "label": "First Count"
+  },
+  {
+   "fieldname": "column_break_ut9g0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_count",
+   "fieldtype": "Int",
+   "label": "Final Count"
+  },
+  {
+   "fieldname": "final_result_section",
+   "fieldtype": "Section Break",
+   "label": "Final Result"
+  },
+  {
+   "fieldname": "avg_normal_seeding",
+   "fieldtype": "Int",
+   "label": "Avg. Normal Seeding"
+  },
+  {
+   "fieldname": "avg_dead_seeds",
+   "fieldtype": "Int",
+   "label": "Avg. Dead Seeds"
+  },
+  {
+   "fieldname": "column_break_ooptk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_hard_seeds",
+   "fieldtype": "Int",
+   "label": "Avg. Hard Seeds"
+  },
+  {
+   "fieldname": "avg_rest_indicating_seeds",
+   "fieldtype": "Int",
+   "label": "Avg. Rest Indicating Seeds"
+  },
+  {
+   "fieldname": "column_break_wy69j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_fresh_ungermination",
+   "fieldtype": "Int",
+   "label": "Avg. Fresh Ungermination"
+  },
+  {
+   "fieldname": "total_seeds",
+   "fieldtype": "Data",
+   "label": "Total Seeds"
+  },
+  {
+   "fieldname": "column_break_ldlfe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_abnormal_seeds",
+   "fieldtype": "Int",
+   "label": "Avg. Abnormal Seeds"
+  },
+  {
+   "fieldname": "section_break_kt8gv",
+   "fieldtype": "Section Break",
+   "label": "Observations"
+  },
+  {
+   "fieldname": "replication1_child_table",
+   "fieldtype": "Table",
+   "label": "Replication1 ",
+   "options": "Replication1 Child Table"
+  },
+  {
+   "fieldname": "column_break_rghbk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "replication2_child_table",
+   "fieldtype": "Table",
+   "label": "Replication2",
+   "options": "Replication2 Child Table"
+  },
+  {
+   "fieldname": "replication3_child_table",
+   "fieldtype": "Table",
+   "label": "Replication3",
+   "options": "Replication3 Child Table"
+  },
+  {
+   "fieldname": "replication4_child_table",
+   "fieldtype": "Table",
+   "label": "Replication4",
+   "options": "Replication4 Child Table"
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "no_of_days",
+   "fieldtype": "Data",
+   "label": "No. Of Days"
+  },
+  {
+   "fieldname": "date2",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "no_of_d",
+   "fieldtype": "Data",
+   "label": "No. Of Days"
+  },
+  {
+   "fieldname": "column_break_g9h7v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jerlp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_putbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nPass\nFail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-22 22:37:01.585884",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Germination Test",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:IP{####}",
+ "creation": "2024-01-19 18:33:50.973167",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_q2bue",
+  "posting_date",
+  "section_break_4ffsq",
+  "from_date",
+  "column_break_p3irb",
+  "to_date",
+  "section_break_yaswi",
+  "check_all",
+  "select_organizer",
+  "section_break_hrj3h",
+  "crop_name",
+  "column_break_xffyc",
+  "rate",
+  "column_break_wmuns",
+  "target_warehouse",
+  "column_break_22hil",
+  "additional_cost",
+  "section_break_xd9ym",
+  "get_lot_details",
+  "column_break_ugyhb",
+  "column_break_to6g8",
+  "column_break_m73vy",
+  "column_break_sp4rk",
+  "column_break_mkhbn",
+  "select_all",
+  "section_break_1vvzx",
+  "invoice",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_q2bue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "section_break_4ffsq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_p3irb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_yaswi",
+   "fieldtype": "Section Break",
+   "label": "Select Organizer"
+  },
+  {
+   "fieldname": "section_break_xd9ym",
+   "fieldtype": "Section Break",
+   "label": "Lot and Farmer Details"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Table",
+   "options": "Invoice Processing Child Table"
+  },
+  {
+   "fieldname": "crop_name",
+   "fieldtype": "Link",
+   "label": "Crop Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_xffyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "get_lot_details",
+   "fieldtype": "Button",
+   "label": "Get Lot Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Invoice Processing",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_all",
+   "fieldtype": "Button",
+   "label": "Select All"
+  },
+  {
+   "fieldname": "column_break_ugyhb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_to6g8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1vvzx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_m73vy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sp4rk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mkhbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_organizer",
+   "fieldtype": "Table",
+   "label": "Select Organizer",
+   "options": "Organizer Details Child Table"
+  },
+  {
+   "fieldname": "section_break_hrj3h",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_all",
+   "fieldtype": "Button",
+   "label": "Check All"
+  },
+  {
+   "fieldname": "column_break_wmuns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_22hil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_cost",
+   "fieldtype": "Float",
+   "label": "Additional Cost",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Purchase Invoice",
+   "link_fieldname": "invoice_processing"
+  },
+  {
+   "link_doctype": "Stock Entry",
+   "link_fieldname": "blending"
+  }
+ ],
+ "modified": "2024-01-23 17:55:56.287136",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Invoice Processing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

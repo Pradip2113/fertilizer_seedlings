@@ -1,0 +1,218 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:VT-{####}",
+ "creation": "2024-01-10 15:54:56.803493",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_name",
+  "column_break_84lyp",
+  "column_break_sbpqk",
+  "date",
+  "section_break_b9ca0",
+  "seed_q_i_no",
+  "column_break_ng94z",
+  "farmer_id",
+  "column_break_k4slr",
+  "farmer_name",
+  "section_break_uvxty",
+  "crop_name",
+  "column_break_dhmy2",
+  "crop_variety",
+  "column_break_ihepj",
+  "lot_number",
+  "column_break_b1fty",
+  "lot_quantity",
+  "section_break_l3tig",
+  "date_of_reporting",
+  "column_break_trtsu",
+  "select_seed_type",
+  "column_break_sah5l",
+  "select_test_result",
+  "column_break_kz2qg",
+  "virus_name",
+  "section_break_kddwn",
+  "remark",
+  "column_break_3br99",
+  "result"
+ ],
+ "fields": [
+  {
+   "default": "Virus Test",
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_84lyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sbpqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_b9ca0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seed_q_i_no",
+   "fieldtype": "Link",
+   "label": "Seed Quality Inspection Number",
+   "options": "Seed Quality Inspection"
+  },
+  {
+   "fieldname": "column_break_ng94z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.farmer_id",
+   "fieldname": "farmer_id",
+   "fieldtype": "Data",
+   "label": "Farmer ID"
+  },
+  {
+   "fieldname": "column_break_k4slr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "section_break_uvxty",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.crop",
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "label": "Crop Name"
+  },
+  {
+   "fieldname": "column_break_dhmy2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "column_break_ihepj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.lot_number",
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "label": "Lot Number"
+  },
+  {
+   "fieldname": "column_break_b1fty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "seed_q_i_no.lot_quantity",
+   "fieldname": "lot_quantity",
+   "fieldtype": "Data",
+   "label": "Lot Quantity"
+  },
+  {
+   "fieldname": "section_break_l3tig",
+   "fieldtype": "Section Break",
+   "label": "Test Infromation"
+  },
+  {
+   "fieldname": "section_break_kddwn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "date_of_reporting",
+   "fieldtype": "Date",
+   "label": "Date of Reporting"
+  },
+  {
+   "fieldname": "column_break_trtsu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_seed_type",
+   "fieldtype": "Select",
+   "label": "Select Seed Type ",
+   "options": "Processed"
+  },
+  {
+   "fieldname": "column_break_sah5l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_test_result",
+   "fieldtype": "Select",
+   "label": "Select Test Result",
+   "options": "\nPositive\nNegative"
+  },
+  {
+   "fieldname": "column_break_kz2qg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "virus_name",
+   "fieldtype": "Data",
+   "label": "Virus Name"
+  },
+  {
+   "fieldname": "column_break_3br99",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nPass\nFail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-18 21:04:36.898304",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Virus Test",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

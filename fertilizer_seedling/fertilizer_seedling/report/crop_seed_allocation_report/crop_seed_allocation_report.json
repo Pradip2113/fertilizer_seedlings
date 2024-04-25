@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-12-30 19:18:23.003321",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Crop Seed Allocation For Farmer\"],[\"farmer_name\",\"Crop Seed Allocation For Farmer\"],[\"date\",\"Crop Seed Allocation For Farmer\"],[\"farmer_id\",\"Crop Seed Allocation For Farmer\"],[\"contact\",\"Crop Seed Allocation For Farmer\"],[\"batch_id\",\"Crop Seed Allocation For Farmer\"],[\"allocated_seed\",\"Crop Seed Allocation For Farmer\"],[\"allocated_seed_cost_price\",\"Crop Seed Allocation For Farmer\"],[\"plotarea\",\"Crop Seed Allocation For Farmer\"],[\"crop_type\",\"Crop Seed Allocation For Farmer\"],[\"season\",\"Crop Seed Allocation For Farmer\"],[\"crop_variety\",\"Crop Seed Allocation For Farmer\"],[\"crop_name\",\"Crop Seed Allocation For Farmer\"]],\"order_by\":\"`tabCrop Seed Allocation For Farmer`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"farmer_name\":120,\"date\":120,\"farmer_id\":120,\"contact\":120,\"batch_id\":120,\"allocated_seed\":120,\"allocated_seed_cost_price\":120,\"plotarea\":120,\"crop_type\":120,\"season\":120,\"crop_variety\":120,\"crop_name\":120},\"group_by\":null}",
+ "modified": "2023-12-30 19:33:21.211325",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Crop Seed Allocation Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Crop Seed Allocation For Farmer",
+ "report_name": "Crop Seed Allocation Report",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

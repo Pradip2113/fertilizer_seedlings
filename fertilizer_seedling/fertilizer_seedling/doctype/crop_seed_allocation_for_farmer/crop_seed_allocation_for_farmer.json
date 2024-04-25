@@ -1,0 +1,328 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CSAF-{####}",
+ "creation": "2023-12-29 14:20:56.088627",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_q2roi",
+  "column_break_6f6iu",
+  "date",
+  "farmer_information_section",
+  "farmer_id",
+  "column_break_iosdx",
+  "farmer_name",
+  "column_break_hvvm6",
+  "contact",
+  "column_break_mbodf",
+  "organizer_name",
+  "section_break_ey1dd",
+  "state",
+  "column_break_fq2mc",
+  "district",
+  "column_break_e6huo",
+  "taluka",
+  "column_break_zs8ww",
+  "village",
+  "section_break_autsl",
+  "crop_type",
+  "plotarea",
+  "column_break_5bsfp",
+  "crop_name",
+  "plot_number",
+  "column_break_mhfve",
+  "crop_variety",
+  "sowing_method",
+  "column_break_8omny",
+  "batch_id",
+  "allocated_seed",
+  "column_break_7bxft",
+  "season",
+  "uom",
+  "section_break_d14am",
+  "cost_price_kg",
+  "column_break_nzvcj",
+  "allocated_seed_cost_price",
+  "section_break_g0wya",
+  "internal_operations",
+  "fertilizers",
+  "pesticides",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_6f6iu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "farmer_information_section",
+   "fieldtype": "Section Break",
+   "label": "Farmer Information"
+  },
+  {
+   "fieldname": "farmer_id",
+   "fieldtype": "Link",
+   "label": "Farmer ID",
+   "options": "Farmer"
+  },
+  {
+   "fieldname": "column_break_iosdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "farmer_id.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "column_break_hvvm6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "farmer_id.contact",
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "section_break_ey1dd",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fetch_from": "farmer_id.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "column_break_fq2mc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "farmer_id.district",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_e6huo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "farmer_id.taluka",
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Taluka"
+  },
+  {
+   "fieldname": "column_break_zs8ww",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "farmer_id.village",
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "section_break_autsl",
+   "fieldtype": "Section Break",
+   "label": "Crop Information"
+  },
+  {
+   "fieldname": "crop_type",
+   "fieldtype": "Link",
+   "label": "Crop Type",
+   "options": "Crop Type"
+  },
+  {
+   "fieldname": "batch_id",
+   "fieldtype": "Link",
+   "label": "Foundation Batch ID",
+   "options": "Foundation Seed"
+  },
+  {
+   "fieldname": "column_break_5bsfp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_name",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Crop"
+  },
+  {
+   "fetch_from": "batch_id.sowing_method",
+   "fieldname": "sowing_method",
+   "fieldtype": "Link",
+   "label": "Sowing Method",
+   "options": "Sowing Method"
+  },
+  {
+   "fieldname": "column_break_mhfve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_variety",
+   "fieldtype": "Link",
+   "label": "Crop Variety",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "batch_id.season",
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "column_break_8omny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "farmer_id.plotarea",
+   "fieldname": "plotarea",
+   "fieldtype": "Float",
+   "label": "Plot(Area in Acre)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "allocated_seed",
+   "fieldtype": "Float",
+   "label": "Allocated Seed",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_d14am",
+   "fieldtype": "Section Break",
+   "label": "Cost Details"
+  },
+  {
+   "fieldname": "internal_operations",
+   "fieldtype": "Table",
+   "label": "Operations",
+   "options": "Internal Operation Child Table"
+  },
+  {
+   "fieldname": "fertilizers",
+   "fieldtype": "Table",
+   "label": "Fertilizer Application",
+   "options": "Fertilizer Child Table"
+  },
+  {
+   "fieldname": "pesticides",
+   "fieldtype": "Table",
+   "label": "Pesticides",
+   "options": "Pesticide Child Table"
+  },
+  {
+   "fieldname": "column_break_q2roi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "batch_id.cost_price_kg",
+   "fieldname": "cost_price_kg",
+   "fieldtype": "Float",
+   "label": "Cost Price /kg"
+  },
+  {
+   "fieldname": "allocated_seed_cost_price",
+   "fieldtype": "Float",
+   "label": "Allocated Seed Cost Price",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_g0wya",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "batch_id.uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Crop Seed Allocation For Farmer",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Link",
+   "label": "Plot Number",
+   "options": "Plot Number"
+  },
+  {
+   "fieldname": "column_break_nzvcj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7bxft",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mbodf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "farmer_id.organizer",
+   "fieldname": "organizer_name",
+   "fieldtype": "Data",
+   "label": " Organizer Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Farm Inspection",
+   "link_fieldname": "crop_seed_allocation_id"
+  }
+ ],
+ "modified": "2024-01-17 17:34:21.272328",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Crop Seed Allocation For Farmer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "plot_number,farmer_id,farmer_name ,batch_id,crop_name,crop_variety",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

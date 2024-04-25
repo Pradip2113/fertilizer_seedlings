@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PL{####}",
+ "creation": "2024-01-03 17:31:23.450953",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "farmer",
+  "farmer_name"
+ ],
+ "fields": [
+  {
+   "fetch_from": "farmer.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer ID",
+   "options": "Farmer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-15 14:20:43.975306",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Plot Number",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "farmer,farmer_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
